@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geração Tech - Atividade 01</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Roboto", sans-serif;
+            background: linear-gradient(45deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            color: white;
+            text-shadow: 1px 1px #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            margin: 0;
+            text-align: center;
+            gap: 30px;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            max-width: 800px;
+        }
+
+        nav {
+            width: 100%;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .links a:hover {
+            color: rgb(138, 138, 138);
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .musthave ul {
+            list-style: none;
+            text-align: left;
+            padding: 0;
+        }
+
+        .midia {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+
+            .links {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .links a {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header" id="home">
+        <h1>Geração Tech - Desenvolvendo o Futuro da Tecnologia no Ceará</h1>
+        <h2>
+            1.000 vagas para impulsionar o conhecimento, tendo ênfase na Tecnologia
+            e Inovação, com o objetivo de capacitar jovens, de forma totalmente
+            gratuita, por meio de uma formação intensiva em Desenvolvimento Web.
+        </h2>
+        <p> O Geração Tech é um projeto do Instituto Euvaldo Lodi (IEL) e o
+            Governo do Estado do Ceará por meio da Agência de Desenvolvimento do
+            Estado do Ceará (ADECE) para capacitação de jovens na área da
+            tecnologia.</p>
+    </header>
+    <nav>
+        <ul class="links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#requirements">Requirements</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article id="about">
+            <h2>Seja você um aluno da Geração Tech!</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, eos!
+            </p>
+        </article>
+        <section class="musthave" id="requirements">
+            <h3>Requisitos:</h3>
+            <ul>
+                <li>- Ter entre 18 e 29 anos;</li>
+                <li>- Ser residente do Ceará;</li>
+                <li>- Ter concluído o Ensino Médio;</li>
+                <li>- Dominar conhecimentos em Informática Básica;</li>
+                <li>
+                    - Ter renda per capta menor ou igual a meio salário ou renda familiar
+                    de até 3 salários mínimos. <br>(comprovação através do Cadastro Único -
+                    CadÚnico do Governo Federal);
+                </li>
+                <li>
+                    - Ter acesso a computador ou notebook e acesso à internet <br>(sendo o
+                    acesso obrigatório para candidatos da modalidade online);
+                </li>
+                <li>- Alunos de escola pública terão preferência na seleção.</li>
+            </ul>
+        </section>
+        <section class="midia">
+            <audio controls src="https://www.myinstants.com/media/sounds/discord-notification.mp3"></audio>
+            <video width="640" height="360" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+        </section>
+    </main>
+</body>
+</html>
